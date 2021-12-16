@@ -2,14 +2,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Provider } from 'react-redux';
+import HomeScreen from './screens/HomeScreen';
+import { store } from './store';
 // redux nunca lo entendi XDD
 
 export default function App() {
   return (
-    <Provider store={}>
-      <View style={styles.container}>
-        <Text>Vamos hacer un clone de Uber!</Text>
-      </View>
+    <Provider store={store}>
+      <HomeScreen/>
     </Provider>
 
   );
